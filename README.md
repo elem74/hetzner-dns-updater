@@ -21,14 +21,14 @@ Simple Tool for creating/ updating DNS records with your current IP (v4).
 
 ### Deployment via CLI
 ```
-docker run -v /my_path/records.csv:/records.csv -e api_token=my_token docker.io/elem74/hetzner_dns_updater
+docker run -v /my_path/records.csv:/records.csv -e api_token=my_token docker.io/elem74/hetzner-dns-updater
 ```
 
 ### Deployment via Compose File
 ```
 services:
     hetzner_dns_updater:
-        image: docker.io/elem74/hetzner_dns_updater
+        image: docker.io/elem74/hetzner-dns-updater
         volumes:
             - /my_path/records.csv:/records.csv
         environment:
